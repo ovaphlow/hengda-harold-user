@@ -1,11 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+import 'bulma/css/bulma.css';
+
+import SignIn from './SignIn';
+
+function Index() {
+  return (
+    <HashRouter>
+      <Switch>
+        <Route path="/sign-in">
+          <SignIn />
+        </Route>
+      </Switch>
+    </HashRouter>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Index />
   </React.StrictMode>,
   document.getElementById('root'),
 );

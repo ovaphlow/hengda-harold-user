@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const Router = require('@koa/router');
 
-const logger = require('../../hengda-harold/api/util/bunyan');
+const logger = require('../../hengda-harold/dispatcher/util/bunyan');
 
 const app = new Koa();
 

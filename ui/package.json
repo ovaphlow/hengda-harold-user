@@ -6,8 +6,14 @@
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "blueimp-md5": "^2.17.0",
+    "bulma": "^0.9.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@snowpack/app-scripts-react": "^1.10.0",
