@@ -43,8 +43,8 @@ export default function SignIn() {
 
         <main>
           <div className="columns fullheight is-centered is-vcentered">
-            <div className="column is-3">
-              <div className="box">
+            <div className="column is-3" style={{ width: '400px' }}>
+              <div className="box" style={{ width: '400px' }}>
                 <h3 className="title is-3 has-text-dark">登录</h3>
                 <hr />
                 <div className="field">
