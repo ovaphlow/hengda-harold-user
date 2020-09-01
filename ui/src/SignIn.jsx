@@ -11,7 +11,25 @@ export default function SignIn() {
   const [password, setPassword] = React.useState('');
 
   const handleSubmit = () => {
-    window.console.info(username, password, md5(password));
+    if (!username || !password) {
+      window.alert('请完整输入所需信息');
+      return;
+    }
+    window
+      .fetch('/api/user/sign-in', {
+        method: 'PUT',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ username, password: md5(password) }),
+      })
+      .then((response) => {
+        if (response.status === 200) return response.json();
+        else if (response.status === 401) window.alert('用户名或密码错误');
+        else window.alert('服务器错误');
+      })
+      .then((data) => {
+        window.sessionStorage.setItem('auth', data);
+        window.location = '/';
+      });
   };
 
   return (
