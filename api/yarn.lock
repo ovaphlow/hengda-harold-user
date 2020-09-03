@@ -79,7 +79,7 @@ copy-to@^2.0.1:
   resolved "https://registry.npm.taobao.org/copy-to/download/copy-to-2.0.1.tgz#2680fbb8068a48d08656b6098092bdafc906f4a5"
   integrity sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=
 
-debug@^4.0.1, debug@^4.1.1:
+debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
@@ -224,14 +224,6 @@ koa-convert@^1.2.0:
   dependencies:
     co "^4.6.0"
     koa-compose "^3.0.0"
-
-koa-mount@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/koa-mount/download/koa-mount-4.0.0.tgz#e0265e58198e1a14ef889514c607254ff386329c"
-  integrity sha1-4CZeWBmOGhTviJUUxgclT/OGMpw=
-  dependencies:
-    debug "^4.0.1"
-    koa-compose "^4.1.0"
 
 koa@^2.13.0:
   version "2.13.0"

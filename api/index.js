@@ -15,11 +15,6 @@ const router = new Router({
   prefix: '/api/user',
 });
 
-router.get('/sign-in', async (ctx) => {
-  logger.info('1123');
-  ctx.response.body = '1123';
-});
-
 router.put('/sign-in', async (ctx) => {
   const cnx = await postgres.connect();
   try {

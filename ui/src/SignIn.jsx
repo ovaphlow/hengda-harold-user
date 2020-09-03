@@ -23,11 +23,14 @@ export default function SignIn() {
       })
       .then((response) => {
         if (response.status === 200) return response.json();
-        else if (response.status === 401) window.alert('用户名或密码错误');
-        else window.alert('服务器错误');
+        else if (response.status === 401) {
+          window.alert('用户名或密码错误');
+          window.location.reload(true);
+        } else window.alert('服务器错误');
       })
       .then((data) => {
-        window.sessionStorage.setItem('auth', data);
+        if (!data) return;
+        window.sessionStorage.setItem('auth', JSON.stringify(data));
         window.location = '/';
       });
   };
